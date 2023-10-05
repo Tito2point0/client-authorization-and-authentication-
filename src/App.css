@@ -1,6 +1,21 @@
 .App {
   text-align: center;
 }
+/* styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* background-image: url('./img/Friends-TV-show-wallpaper.jpg'); */
+  background-image: url('./img/161634-01_1024x1024@2x.webp');
+  background-size: 100%;
+  background-position: center; 
+  background-repeat: no-repeat; 
+
+}
+
+/* ... (rest of your CSS styles) */
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +50,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* Apply a container around the elements inside .headerMenu with the .links class */
+.header {
+  background-color: lightblue;
+  padding: 10px; 
+  color: blue; 
+  border: 8px inset #1e0357;
+}
+
+.header h2 {
+  font-weight: bold; 
+  color: blue; 
+}
+
+
+.links {
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  line-height: 3;
+  color: black;
+  font-style: italic; /* Make the links italic */
+  transition: background 0.3s, color 0.3s;
+  padding: 5px 10px; /* Add padding to the links */
+  border: 8px outset #1e0357;
+  margin: 0 5px; /* Add margin to space out the links */
+}
+
+.links:hover {
+  background: rgb(66, 235, 36);
+  color: rgb(127, 229, 19);
+  border: 8px outset #1e0357
+}
+
+.links:active {
+  background: darkred;
+  border: 8px inset #1e0357
+}
+
+/* Adjust styles for visited and focused links */
+.links:visited {
+  color: black;
+  border: double #044152;
+}
+
+.links:focus {
+  background: rgb(5, 94, 47);
+  color: black;
+}
+.container1 {
+  min-height: 100vh; 
+  /* display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;  */
 }
